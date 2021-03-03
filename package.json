@@ -1,0 +1,8 @@
+{
+  "name": "poc-nodejs-redis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:luisfelipegodoi/poc-nodejs-redis.git",
+  "author": "Luis Felipe <luisgodoi@cvccorp.com.br>",
+  "license": "MIT"
+}
