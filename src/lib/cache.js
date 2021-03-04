@@ -17,7 +17,7 @@ class cache{
     }
 
     set(key, value, timeExp) {
-        return this.redis(key, JSON.stringify(value), "EX", timeExp);
+        return this.redis.set(key, JSON.stringify(value), "EX", timeExp);
     }
 
     del(key) {
