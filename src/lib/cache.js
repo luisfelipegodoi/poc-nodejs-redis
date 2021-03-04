@@ -26,7 +26,9 @@ class cache{
 
     async delPrefix(prefix) {
         const keys = (await this.redis.keys(`cache:${prefix}:*`))
-            .map(key => key.replace("cache:", ""))
+            .map((key) => key.replace("cache:", ""));
+
+        return this.redis.del(keys);
     }
 }
 
